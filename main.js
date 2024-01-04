@@ -37,9 +37,8 @@ function marry(person1, person2) {
   person1.married = true;
   person2.married = true;
 
-  person1.spouseName = person2.firstName + " " + person2.lastName;
-  person2.spouseName = person1.firstName + " " + person1.lastName;
-  return [person1, person2];
+  person1.spouseName = getFullName(person1);
+  person2.spouseName = getFullName(person2);
 }
 
 function divorce(person1, person2) {
