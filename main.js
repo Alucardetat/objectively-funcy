@@ -47,7 +47,6 @@ function divorce(person1, person2) {
   
   delete person1.spouseName;
   delete person2.spouseName;
-  return [person1, person2];
 }
 
 
